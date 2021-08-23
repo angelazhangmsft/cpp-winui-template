@@ -1,0 +1,8 @@
+namespace cpp_winui_template
+{
+    [default_interface]
+    runtimeclass Scenario1_ShortName : Microsoft.UI.Xaml.Controls.Page
+    {
+        Scenario1_ShortName();
+    }
+}

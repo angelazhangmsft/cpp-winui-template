@@ -1,0 +1,19 @@
+namespace cpp_winui_template
+{
+
+    struct Scenario
+    {
+	    String Title;
+	    String ClassName;
+    };
+
+    [default_interface]
+    runtimeclass MainPage : Microsoft.UI.Xaml.Controls.Page
+    {
+        MainPage();
+        static MainPage Current{ get; };
+        static Windows.Foundation.Collections.IVector<Scenario> scenarios{ get; };
+
+        void NotifyUser(String strMessage, Microsoft.UI.Xaml.Controls.InfoBarSeverity severity, Boolean isOpen);
+    }
+}
